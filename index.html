@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-marker type="pattern" url="https://venice-and-death.github.io/imagemarkers/violence/pattern-violence.patt">
+        <a-entity
+          position="0 0 0"
+          scale="0.000005 0.000005 0.000005"
+          obj-model="obj: url(https://venice-and-death.github.io/objectmodels/violence ponte neighbourhood for ar.obj); 
+            mtl: url(https://venice-and-death.github.io/objectmodels/violence ponte neighbourhood for ar.mtl)"
+        ></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
